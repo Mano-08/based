@@ -60,7 +60,10 @@ function Landing() {
       </div>
       <div className="flex flex-row gap-3 items-center text-white relative pb-[4rem] pt-5 justify-center md:justify-start w-full md:p-0 md:-top-5">
         {themes.map((theme) => (
-          <button className="hover:bg-white text-[1.1rem] hover:text-[--blue] rounded-full px-3 py-1.5">
+          <button
+            key={theme}
+            className="hover:bg-white text-[1.1rem] hover:text-[--blue] rounded-full px-3 py-1.5"
+          >
             {theme}
           </button>
         ))}

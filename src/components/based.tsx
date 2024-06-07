@@ -37,8 +37,9 @@ export function BASED() {
   ];
   return (
     <div className="relative flex flex-row h-auto md:h-[12rem] gap-2 md:gap-3 text-white">
-      {data.map((item) => (
+      {data.map((item, index) => (
         <div
+          key={index}
           id={item.char}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
